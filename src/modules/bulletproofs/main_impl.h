@@ -199,7 +199,7 @@ int secp256k1_bulletproof_rangeproof_prove(const secp256k1_context* ctx, secp256
     ARG_CHECK(blind != NULL);
     ARG_CHECK(value_gen != NULL);
     ARG_CHECK(nonce != NULL);
-    ARG_CHECK(n_commits > 0 && n_commits);
+    ARG_CHECK(n_commits > 0);
     ARG_CHECK(nbits <= 64);
     if (nbits < 64) {
         for (i = 0; i < n_commits; i++) {
